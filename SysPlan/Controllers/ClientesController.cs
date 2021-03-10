@@ -20,14 +20,13 @@ namespace SysPlan.Controllers
         }
 
         [HttpGet]
-        [Route("api/[controller]")]
+      
         public IActionResult GetClientes()
         {
             return Ok(_clienteData.GetClientes());
         }
 
-        [HttpGet]
-        [Route("api/[controller]/{id}")]
+        [HttpGet("{id}")]
         public IActionResult GetClientes(Guid id)
         {
             var cliente = _clienteData.GetCliente(id);
@@ -41,7 +40,7 @@ namespace SysPlan.Controllers
         }
 
         [HttpPost]
-        [Route("api/[controller]")]
+      
         public IActionResult AddCliente(Cliente cliente)
         {
 
@@ -50,8 +49,7 @@ namespace SysPlan.Controllers
             return Created(HttpContext.Request.Scheme + "://" + HttpContext.Request.Host + HttpContext.Request.Path + "/" + cliente.Id, cliente);
         }
 
-        [HttpDelete]
-        [Route("api/[controller]/{id}")]
+        [HttpDelete("{id}")]
         public IActionResult DeleteCliente(Guid id)
         {
             var cliente = _clienteData.GetCliente(id);
@@ -66,8 +64,7 @@ namespace SysPlan.Controllers
 
         }
 
-        [HttpPatch]
-        [Route("api/[controller]/{id}")]
+        [HttpPut("{id}")]
         public IActionResult EditCliente(Guid id, Cliente cliente)
         {
             var clienteAtual = _clienteData.GetCliente(id);

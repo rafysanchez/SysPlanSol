@@ -20,6 +20,7 @@ namespace SysPlan.Bussiness
         {
             cliente.Id = Guid.NewGuid();
             _dbContext.Clientes.Add(cliente);
+            _dbContext.SaveChanges();
             return cliente;
         }
 
