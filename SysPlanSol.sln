@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysPlan", "SysPlan\SysPlan.csproj", "{F606E9DF-AB97-4338-A403-D90993DA7BD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{80454DE8-2272-419A-836F-263E39F46A3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F606E9DF-AB97-4338-A403-D90993DA7BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F606E9DF-AB97-4338-A403-D90993DA7BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F606E9DF-AB97-4338-A403-D90993DA7BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F606E9DF-AB97-4338-A403-D90993DA7BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC8E19FA-02EE-4523-987B-266424250012}
+	EndGlobalSection
+EndGlobal
